@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define X 800
-#define Y 600
+#define X 524
+#define Y 524
 #define BPP 32
 #define RGB1  -1
 #define RGB2   0
@@ -68,7 +68,7 @@ int main(int argc, char **argv) {
 
 	unsigned int *vmem = (unsigned int*) w.start;
 	for(int i=0; i < (X*Y); i ++)
-		vmem[i] =  -1;
+		vmem[i] =  0xFFFFFF;
 	int rgb;
 
 
